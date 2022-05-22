@@ -2,10 +2,36 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 <title>工具</title>
-</head>
+</head><style>
+    /* 小屏幕手机端 */
+    @media (min-width: 0px) and (max-width:768px) {
+        .div1{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+    /* 中等屏幕（桌面显示器，大于等于 992px） */
+    @media (min-width: 768px) and (max-width:992px){
+        .div1{
+            width: 300px;
+            height: 300px;
+        }
+    }
+    
+    /* 大屏幕（大桌面显示器，大于等于 1200px） */
+    @media (min-width: 992px) {
+        .div1{
+            width: 500px;
+            height: 500px;
+        }
+    }
+</style>
 
 <body>
+    <div class="div1">
     开发者工具下载包<br/>
     <a href="https://registry.npmmirror.com/-/binary/git-for-windows/v2.36.1.windows.1/Git-2.36.1-64-bit.exe">git</a><br/>
     <a href="https://desktop.githubusercontent.com/github-desktop/releases/3.0.0-b9edf655/GitHubDesktopSetup-x64.exe">github-desktop</a><br/>
@@ -17,5 +43,6 @@
     <a href="https://c2rsetup.officeapps.live.com/c2r/downloadVS.aspx?sku=community&channel=Release&version=VS2022&source=VSLandingPage&includeRecommended=true&cid=2030:7e84b55d-c89b-4ab2-9160-9c8bf210640c">vs 2022</a><br/>
     <a href="http://mirrors.ustc.edu.cn/mysql-ftp/Downloads/MySQL-8.0/mysql-8.0.29-winx64.msi">mysql8.0</a><br/>
     <a href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows">pycharm</a><br/>
+    </div>
 </body>
 </html>
